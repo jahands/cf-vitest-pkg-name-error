@@ -1,12 +1,5 @@
-import {
-  createExecutionContext,
-  env,
-  fetchMock,
-  runInDurableObject,
-  SELF,
-  waitOnExecutionContext,
-} from "cloudflare:test"
-import { afterEach, beforeEach, expect, it, test } from "vitest"
+import { env, runInDurableObject } from "cloudflare:test"
+import { expect, test } from "vitest"
 import { MyDurableObject } from ".."
 
 test("do stuff", async () => {
